@@ -26,13 +26,15 @@ func TestInitialElection2A(t *testing.T) {
 
 	cfg.begin("Test (2A): initial election")
 
+	fmt.Printf("before the first checkOneLeader in TestInitialElection2A\n")
 	// is a leader elected?
 	cfg.checkOneLeader()
-
+	fmt.Printf("after the first checkOneLeader in TestInitialElection2A\n")
 	// sleep a bit to avoid racing with followers learning of the
 	// election, then check that all peers agree on the term.
 	time.Sleep(50 * time.Millisecond)
 	term1 := cfg.checkTerms()
+	fmt.Printf("after the first checkTerms in TestInitialElection2A\n")
 	if term1 < 1 {
 		t.Fatalf("term is %v, but should be at least 1", term1)
 	}
@@ -40,13 +42,14 @@ func TestInitialElection2A(t *testing.T) {
 	// does the leader+term stay the same if there is no network failure?
 	time.Sleep(2 * RaftElectionTimeout)
 	term2 := cfg.checkTerms()
+	fmt.Printf("after the second checkTerms in TestInitialElection2A\n")
 	if term1 != term2 {
 		fmt.Printf("warning: term changed even though there were no failures")
 	}
-
+	fmt.Printf("before the second checkOneLeader in TestInitialElection2A\n")
 	// there should still be a leader.
 	cfg.checkOneLeader()
-
+	fmt.Printf("after the second checkOneLeader in TestInitialElection2A\n")
 	cfg.end()
 }
 
@@ -57,31 +60,63 @@ func TestReElection2A(t *testing.T) {
 
 	cfg.begin("Test (2A): election after network failure")
 
+	fmt.Printf("before the first checkOneLeader in TestReElection2A\n")
 	leader1 := cfg.checkOneLeader()
+	fmt.Printf("after the first checkOneLeader in TestReElection2A\n")
 
 	// if the leader disconnects, a new one should be elected.
+	fmt.Printf("before disconnect leader %v in TestReElection2A\n", leader1)
 	cfg.disconnect(leader1)
+	fmt.Printf("after disconnect leader %v in TestReElection2A\n", leader1)
+
+	fmt.Printf("before the second checkOneLeader in TestReElection2A\n")
 	cfg.checkOneLeader()
+	fmt.Printf("after the second checkOneLeader in TestReElection2A\n")
 
 	// if the old leader rejoins, that shouldn't
 	// disturb the new leader.
+	fmt.Printf("before connect old leader %v in TestReElection2A\n", leader1)
 	cfg.connect(leader1)
+	fmt.Printf("after connect old leader %v in TestReElection2A\n", leader1)
+
+	fmt.Printf("before the third checkOneLeader in TestReElection2A\n")
 	leader2 := cfg.checkOneLeader()
+	fmt.Printf("after the third checkOneLeader in TestReElection2A\n")
 
 	// if there's no quorum, no leader should
 	// be elected.
+
+	fmt.Printf("before disconnect leader %v in TestReElection2A\n", leader2)
 	cfg.disconnect(leader2)
+	fmt.Printf("after disconnect leader %v in TestReElection2A\n", leader2)
+
+	fmt.Printf("before disconnect follower %v in TestReElection2A\n", (leader2 + 1) % servers)
 	cfg.disconnect((leader2 + 1) % servers)
+	fmt.Printf("after disconnect follower %v in TestReElection2A\n", (leader2 + 1) % servers)
+
 	time.Sleep(2 * RaftElectionTimeout)
+
+	fmt.Printf("before the first checkNoLeader in TestReElection2A\n")
 	cfg.checkNoLeader()
+	fmt.Printf("after the first checkNoLeader in TestReElection2A\n")
 
 	// if a quorum arises, it should elect a leader.
+	fmt.Printf("before connect old follower %v in TestReElection2A\n", (leader2 + 1) % servers)
 	cfg.connect((leader2 + 1) % servers)
+	fmt.Printf("after connect old follower %v in TestReElection2A\n", (leader2 + 1) % servers)
+
+	fmt.Printf("before the fourth checkOneLeader in TestReElection2A\n")
 	cfg.checkOneLeader()
+	fmt.Printf("after the fourth checkOneLeader in TestReElection2A\n")
 
 	// re-join of last node shouldn't prevent leader from existing.
+	fmt.Printf("before connect old leader %v in TestReElection2A\n", leader2)
 	cfg.connect(leader2)
+	fmt.Printf("after connect old leader %v in TestReElection2A\n", leader2)
+
+	fmt.Printf("before the fifth checkOneLeader in TestReElection2A\n")
 	cfg.checkOneLeader()
+	fmt.Printf("after the fifth checkOneLeader in TestReElection2A\n")
 
 	cfg.end()
 }
@@ -155,8 +190,9 @@ func TestFailAgree2B(t *testing.T) {
 
 	// disconnect one follower from the network.
 	leader := cfg.checkOneLeader()
+	fmt.Printf("checkOneLeader is %v in TestFailAgree2B\n", leader)
 	cfg.disconnect((leader + 1) % servers)
-
+	fmt.Printf("disconnect %v in TestFailAgree2B\n", leader+1)
 	// the leader and remaining follower should be
 	// able to agree despite the disconnected follower.
 	cfg.one(102, servers-1, false)

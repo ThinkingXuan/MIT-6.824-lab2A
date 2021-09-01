@@ -1,6 +1,9 @@
 package mr
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 import "log"
 import "net/rpc"
 import "hash/fnv"
@@ -13,6 +16,11 @@ type KeyValue struct {
 	Key   string
 	Value string
 }
+type ByKey []KeyValue
+
+func (a ByKey) Len() int           { return len(a) }
+func (a ByKey) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
+func (a ByKey) Less(i, j int) bool { return a[i].Key < a[j].Key }
 
 //
 // use ihash(key) % NReduce to choose the reduce
@@ -24,18 +32,58 @@ func ihash(key string) int {
 	return int(h.Sum32() & 0x7fffffff)
 }
 
-
 //
 // main/mrworker.go calls this function.
 //
+func CallAskTask() *TaskInfo {
+	args := ExampleArgs{}
+	reply := TaskInfo{}
+	call("Master.AskTask", &args, &reply)
+	return &reply
+}
+
+func CallTaskDone(taskInfo *TaskInfo) {
+	reply := ExampleArgs{}
+	call("Master.TaskDone", taskInfo, &reply)
+}
+
+// map process of worker
+func WorkerMap(mapf func(string, string) []KeyValue, taskInfo *TaskInfo) {
+	// logical business
+	fmt.Printf("Got assigned map task on %vth file %v\n", taskInfo.FileIdx, taskInfo.FileName)
+	// notify master: the mapTask is done
+	CallTaskDone(taskInfo)
+	time.Sleep(time.Duration(time.Second*2))
+}
+
+// reduce process of worker
+func WorkerReduce(reducef func(string, []string) string, taskInfo *TaskInfo) {
+	// logical business
+	fmt.Printf("Got assigned reduce task on part %v of %vth file %v\n", taskInfo.PartIdx, taskInfo.FileIdx, taskInfo.FileName)
+	// notify master: the reduceTask is done
+	CallTaskDone(taskInfo)
+	time.Sleep(time.Duration(time.Second*2))
+}
+
 func Worker(mapf func(string, string) []KeyValue,
 	reducef func(string, []string) string) {
-
 	// Your worker implementation here.
-
-	// uncomment to send the Example RPC to the master.
-	// CallExample()
-
+	for {
+		taskInfo := CallAskTask()
+		switch taskInfo.Status {
+		case TaskMap:
+			WorkerMap(mapf, taskInfo)
+			break
+		case TaskReduce:
+			WorkerReduce(reducef, taskInfo)
+			break
+		case TasksAllDone:
+			fmt.Println("All Tasks completed, nothing to do.")
+			return
+		default:
+			panic("Invalid task status received from master.")
+		}
+	}
 }
 
 //

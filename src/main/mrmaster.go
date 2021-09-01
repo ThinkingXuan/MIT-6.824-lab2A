@@ -20,10 +20,10 @@ func main() {
 		os.Exit(1)
 	}
 
-	m := mr.MakeMaster(os.Args[1:], 10)
+	m := mr.MakeMaster(os.Args[1:], 3)
 	for m.Done() == false {
 		time.Sleep(time.Second)
 	}
 
-	time.Sleep(time.Second)
+	time.Sleep(time.Second*20)
 }

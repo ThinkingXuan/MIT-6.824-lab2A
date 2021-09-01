@@ -1,0 +1,948 @@
+Test (2A): initial election ...
+before the first checkOneLeader in TestInitialElection2A
+election time out, I'm..0, term 1 turn to candidate in Loop
+I'm..0, term..1, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+[0<-2] feedback in time in seekVotes
+[0<-2], term 1, vote for me in seekVotes
+[0<-1] feedback in time in seekVotes
+[0<-1], term 1, vote for me in seekVotes
+I'm..0, term..1, become a Leader in seekVotes
+I'm..0, term..1, seeked vote in Loop
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+after the first checkOneLeader in TestInitialElection2A
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+after the first checkTerms in TestInitialElection2A
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+after the second checkTerms in TestInitialElection2A
+before the second checkOneLeader in TestInitialElection2A
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+[0<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 0 in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+after the second checkOneLeader in TestInitialElection2A
+  ... Passed --   3.1  3   50   13118    0
+Test (2A): election after network failure ...
+before the first checkOneLeader in TestReElection2A
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+election time out, I'm..1, term 2 turn to candidate in Loop
+I'm..1, term..2, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+[0<-2] timeout in sendHeartBeatToPeers
+[0<-1] timeout in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks failed, turn back Follower in sendHeartBeatToPeers
+election time out, I'm..2, term 2 turn to candidate in Loop
+I'm..2, term..2, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+[1<-0] timeout in sendHeartBeatToPeers
+[1<-2] timeout in sendHeartBeatToPeers
+I'm..1, term..2, failed to a Leader in seekVotes
+I'm..1, term..2, seeked vote in Loop
+[2<-0] timeout in sendHeartBeatToPeers
+[2<-1] timeout in sendHeartBeatToPeers
+I'm..2, term..2, failed to a Leader in seekVotes
+I'm..2, term..2, seeked vote in Loop
+election time out, I'm..2, term 1 turn to candidate in Loop
+I'm..2, term..1, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+[2<-0] feedback in time in seekVotes
+[2<-0], term 1, vote for me in seekVotes
+[2<-1] feedback in time in seekVotes
+[2<-1], term 1, vote for me in seekVotes
+I'm..2, term..1, become a Leader in seekVotes
+I'm..2, term..1, seeked vote in Loop
+[2->1] in sendHeartBeatToPeers
+[2->0] in sendHeartBeatToPeers
+[2<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 2 in sendHeartBeatToPeers
+[2<-0] feedback in time in sendHeartBeatToPeers
+node..0 follows 2 in sendHeartBeatToPeers
+I'm 2, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[2->1] in sendHeartBeatToPeers
+[2->0] in sendHeartBeatToPeers
+[2<-0] feedback in time in sendHeartBeatToPeers
+node..0 follows 2 in sendHeartBeatToPeers
+[2<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 2 in sendHeartBeatToPeers
+I'm 2, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+election time out, I'm..2, term 3 turn to candidate in Loop
+I'm..2, term..3, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+election time out, I'm..1, term 3 turn to candidate in Loop
+I'm..1, term..3, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+election time out, I'm..0, term 2 turn to candidate in Loop
+I'm..0, term..2, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+[2<-1] timeout in sendHeartBeatToPeers
+[2<-0] timeout in sendHeartBeatToPeers
+I'm..2, term..3, failed to a Leader in seekVotes
+I'm..2, term..3, seeked vote in Loop
+[1<-2] timeout in sendHeartBeatToPeers
+[1<-0] timeout in sendHeartBeatToPeers
+I'm..1, term..3, failed to a Leader in seekVotes
+I'm..1, term..3, seeked vote in Loop
+[0<-2] timeout in sendHeartBeatToPeers
+[0<-1] timeout in sendHeartBeatToPeers
+I'm..0, term..2, failed to a Leader in seekVotes
+I'm..0, term..2, seeked vote in Loop
+[2->1] in sendHeartBeatToPeers
+[2->0] in sendHeartBeatToPeers
+[2<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 2 in sendHeartBeatToPeers
+[2<-0] feedback in time in sendHeartBeatToPeers
+node..0 follows 2 in sendHeartBeatToPeers
+I'm 2, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+after the first checkOneLeader in TestReElection2A
+before disconnect leader 2 in TestReElection2A
+after disconnect leader 2 in TestReElection2A
+before the second checkOneLeader in TestReElection2A
+[2->1] in sendHeartBeatToPeers
+[2->0] in sendHeartBeatToPeers
+[2<-0] timeout in sendHeartBeatToPeers
+[2<-1] timeout in sendHeartBeatToPeers
+I'm 2, a Leader, receive feedbacks failed, turn back Follower in sendHeartBeatToPeers
+election time out, I'm..0, term 3 turn to candidate in Loop
+I'm..0, term..3, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+[0<-1] timeout in sendHeartBeatToPeers
+[0<-2] timeout in sendHeartBeatToPeers
+I'm..0, term..3, failed to a Leader in seekVotes
+I'm..0, term..3, seeked vote in Loop
+election time out, I'm..1, term 4 turn to candidate in Loop
+I'm..1, term..4, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+election time out, I'm..2, term 4 turn to candidate in Loop
+I'm..2, term..4, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+election time out, I'm..1, term 2 turn to candidate in Loop
+I'm..1, term..2, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+[1<-0] feedback in time in seekVotes
+[1<-0], term 2, vote for me in seekVotes
+[1<-2] timeout in sendHeartBeatToPeers
+[1<-0] timeout in sendHeartBeatToPeers
+I'm..1, term..4, failed to a Leader in seekVotes
+I'm..1, term..4, seeked vote in Loop
+[2<-1] timeout in sendHeartBeatToPeers
+[1<-2] timeout in sendHeartBeatToPeers
+I'm..1, term..2, become a Leader in seekVotes
+I'm..1, term..2, seeked vote in Loop
+[2<-0] timeout in sendHeartBeatToPeers
+I'm..2, term..4, failed to a Leader in seekVotes
+I'm..2, term..4, seeked vote in Loop
+[1->2] in sendHeartBeatToPeers
+[1->0] in sendHeartBeatToPeers
+[1<-0] feedback in time in sendHeartBeatToPeers
+node..0 follows 1 in sendHeartBeatToPeers
+[1<-2] timeout in sendHeartBeatToPeers
+I'm 1, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+election time out, I'm..2, term 2 turn to candidate in Loop
+I'm..2, term..2, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+election time out, I'm..0, term 4 turn to candidate in Loop
+I'm..0, term..4, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+[2<-0] timeout in sendHeartBeatToPeers
+[2<-1] timeout in sendHeartBeatToPeers
+I'm..2, term..2, failed to a Leader in seekVotes
+I'm..2, term..2, seeked vote in Loop
+[0<-1] timeout in sendHeartBeatToPeers
+[0<-2] timeout in sendHeartBeatToPeers
+I'm..0, term..4, failed to a Leader in seekVotes
+I'm..0, term..4, seeked vote in Loop
+[1->2] in sendHeartBeatToPeers
+[1->0] in sendHeartBeatToPeers
+[1<-0] feedback in time in sendHeartBeatToPeers
+node..0 follows 1 in sendHeartBeatToPeers
+election time out, I'm..1, term 5 turn to candidate in Loop
+I'm..1, term..5, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+[1<-2] timeout in sendHeartBeatToPeers
+I'm 1, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+after the second checkOneLeader in TestReElection2A
+before connect old leader 2 in TestReElection2A
+after connect old leader 2 in TestReElection2A
+before the third checkOneLeader in TestReElection2A
+[1<-0] timeout in sendHeartBeatToPeers
+[1<-2] timeout in sendHeartBeatToPeers
+I'm..1, term..5, failed to a Leader in seekVotes
+I'm..1, term..5, seeked vote in Loop
+election time out, I'm..2, term 5 turn to candidate in Loop
+I'm..2, term..5, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+election time out, I'm..0, term 5 turn to candidate in Loop
+I'm..0, term..5, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+[2<-1] timeout in sendHeartBeatToPeers
+[2<-0] timeout in sendHeartBeatToPeers
+I'm..2, term..5, failed to a Leader in seekVotes
+I'm..2, term..5, seeked vote in Loop
+[1->2] in sendHeartBeatToPeers
+[1->0] in sendHeartBeatToPeers
+[1<-0] feedback in time in sendHeartBeatToPeers
+node..0 follows 1 in sendHeartBeatToPeers
+[1<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 1 in sendHeartBeatToPeers
+I'm 1, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0<-2] timeout in sendHeartBeatToPeers
+[0<-1] timeout in sendHeartBeatToPeers
+I'm..0, term..5, failed to a Leader in seekVotes
+I'm..0, term..5, seeked vote in Loop
+[1->2] in sendHeartBeatToPeers
+[1->0] in sendHeartBeatToPeers
+[1<-0] feedback in time in sendHeartBeatToPeers
+node..0 follows 1 in sendHeartBeatToPeers
+[1<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 1 in sendHeartBeatToPeers
+I'm 1, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+election time out, I'm..1, term 6 turn to candidate in Loop
+I'm..1, term..6, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+[1<-0] timeout in sendHeartBeatToPeers
+[1<-2] timeout in sendHeartBeatToPeers
+I'm..1, term..6, failed to a Leader in seekVotes
+I'm..1, term..6, seeked vote in Loop
+[1->0] in sendHeartBeatToPeers
+[1->2] in sendHeartBeatToPeers
+[1<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 1 in sendHeartBeatToPeers
+[1<-0] feedback in time in sendHeartBeatToPeers
+node..0 follows 1 in sendHeartBeatToPeers
+I'm 1, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+election time out, I'm..0, term 6 turn to candidate in Loop
+I'm..0, term..6, seek vote in Loop
+[0->2] in seekVotes
+election time out, I'm..2, term 6 turn to candidate in Loop
+I'm..2, term..6, seek vote in Loop
+[2->1] in seekVotes
+[0->1] in seekVotes
+[2->0] in seekVotes
+[0<-1] timeout in sendHeartBeatToPeers
+[2<-0] timeout in sendHeartBeatToPeers
+[0<-2] timeout in sendHeartBeatToPeers
+I'm..0, term..6, failed to a Leader in seekVotes
+[2<-1] timeout in sendHeartBeatToPeers
+I'm..2, term..6, failed to a Leader in seekVotes
+I'm..2, term..6, seeked vote in Loop
+I'm..0, term..6, seeked vote in Loop
+election time out, I'm..1, term 7 turn to candidate in Loop
+I'm..1, term..7, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+[1->2] in sendHeartBeatToPeers
+[1->0] in sendHeartBeatToPeers
+[1<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 1 in sendHeartBeatToPeers
+[1<-0] feedback in time in sendHeartBeatToPeers
+node..0 follows 1 in sendHeartBeatToPeers
+I'm 1, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+after the third checkOneLeader in TestReElection2A
+before disconnect leader 1 in TestReElection2A
+after disconnect leader 1 in TestReElection2A
+before disconnect follower 2 in TestReElection2A
+after disconnect follower 2 in TestReElection2A
+[1<-0] timeout in sendHeartBeatToPeers
+[1<-2] timeout in sendHeartBeatToPeers
+I'm..1, term..7, failed to a Leader in seekVotes
+I'm..1, term..7, seeked vote in Loop
+[1->2] in sendHeartBeatToPeers
+[1->0] in sendHeartBeatToPeers
+election time out, I'm..2, term 7 turn to candidate in Loop
+I'm..2, term..7, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+election time out, I'm..0, term 3 turn to candidate in Loop
+I'm..0, term..3, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+[1<-0] timeout in sendHeartBeatToPeers
+[1<-2] timeout in sendHeartBeatToPeers
+I'm 1, a Leader, receive feedbacks failed, turn back Follower in sendHeartBeatToPeers
+election time out, I'm..1, term 8 turn to candidate in Loop
+I'm..1, term..8, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+election time out, I'm..2, term 3 turn to candidate in Loop
+I'm..2, term..3, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+[2<-1] timeout in sendHeartBeatToPeers
+[2<-0] timeout in sendHeartBeatToPeers
+I'm..2, term..7, failed to a Leader in seekVotes
+I'm..2, term..7, seeked vote in Loop
+[0<-1] timeout in sendHeartBeatToPeers
+[0<-2] timeout in sendHeartBeatToPeers
+I'm..0, term..3, failed to a Leader in seekVotes
+I'm..0, term..3, seeked vote in Loop
+election time out, I'm..0, term 7 turn to candidate in Loop
+I'm..0, term..7, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+[1<-0] timeout in sendHeartBeatToPeers
+[1<-2] timeout in sendHeartBeatToPeers
+I'm..1, term..8, failed to a Leader in seekVotes
+I'm..1, term..8, seeked vote in Loop
+[2<-0] timeout in sendHeartBeatToPeers
+[2<-1] timeout in sendHeartBeatToPeers
+I'm..2, term..3, failed to a Leader in seekVotes
+I'm..2, term..3, seeked vote in Loop
+[0<-2] timeout in sendHeartBeatToPeers
+[0<-1] timeout in sendHeartBeatToPeers
+I'm..0, term..7, failed to a Leader in seekVotes
+I'm..0, term..7, seeked vote in Loop
+election time out, I'm..1, term 3 turn to candidate in Loop
+I'm..1, term..3, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+[1<-0] timeout in sendHeartBeatToPeers
+[1<-2] timeout in sendHeartBeatToPeers
+I'm..1, term..3, failed to a Leader in seekVotes
+I'm..1, term..3, seeked vote in Loop
+election time out, I'm..0, term 4 turn to candidate in Loop
+I'm..0, term..4, seek vote in Loop
+election time out, I'm..2, term 8 turn to candidate in Loop
+I'm..2, term..8, seek vote in Loop
+[2->1] in seekVotes
+[0->2] in seekVotes
+[0->1] in seekVotes
+[2->0] in seekVotes
+election time out, I'm..1, term 9 turn to candidate in Loop
+I'm..1, term..9, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+election time out, I'm..2, term 4 turn to candidate in Loop
+I'm..2, term..4, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+[0<-1] timeout in sendHeartBeatToPeers
+[2<-0] timeout in sendHeartBeatToPeers
+[2<-1] timeout in sendHeartBeatToPeers
+[0<-2] timeout in sendHeartBeatToPeers
+I'm..0, term..4, failed to a Leader in seekVotes
+I'm..0, term..4, seeked vote in Loop
+I'm..2, term..8, failed to a Leader in seekVotes
+I'm..2, term..8, seeked vote in Loop
+[1<-0] timeout in sendHeartBeatToPeers
+[1<-2] timeout in sendHeartBeatToPeers
+I'm..1, term..9, failed to a Leader in seekVotes
+I'm..1, term..9, seeked vote in Loop
+[2<-0] timeout in sendHeartBeatToPeers
+[2<-1] timeout in sendHeartBeatToPeers
+I'm..2, term..4, failed to a Leader in seekVotes
+I'm..2, term..4, seeked vote in Loop
+election time out, I'm..0, term 8 turn to candidate in Loop
+I'm..0, term..8, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+[0<-1] timeout in sendHeartBeatToPeers
+[0<-2] timeout in sendHeartBeatToPeers
+I'm..0, term..8, failed to a Leader in seekVotes
+I'm..0, term..8, seeked vote in Loop
+election time out, I'm..1, term 4 turn to candidate in Loop
+I'm..1, term..4, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+election time out, I'm..2, term 5 turn to candidate in Loop
+I'm..2, term..5, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+[1<-2] timeout in sendHeartBeatToPeers
+[1<-0] timeout in sendHeartBeatToPeers
+I'm..1, term..4, failed to a Leader in seekVotes
+I'm..1, term..4, seeked vote in Loop
+election time out, I'm..0, term 5 turn to candidate in Loop
+I'm..0, term..5, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+election time out, I'm..2, term 9 turn to candidate in Loop
+I'm..2, term..9, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+[2<-1] timeout in sendHeartBeatToPeers
+[2<-0] timeout in sendHeartBeatToPeers
+I'm..2, term..5, failed to a Leader in seekVotes
+I'm..2, term..5, seeked vote in Loop
+election time out, I'm..1, term 10 turn to candidate in Loop
+I'm..1, term..10, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+[0<-2] timeout in sendHeartBeatToPeers
+[0<-1] timeout in sendHeartBeatToPeers
+I'm..0, term..5, failed to a Leader in seekVotes
+I'm..0, term..5, seeked vote in Loop
+[2<-0] timeout in sendHeartBeatToPeers
+[2<-1] timeout in sendHeartBeatToPeers
+I'm..2, term..9, failed to a Leader in seekVotes
+I'm..2, term..9, seeked vote in Loop
+[1<-2] timeout in sendHeartBeatToPeers
+[1<-0] timeout in sendHeartBeatToPeers
+I'm..1, term..10, failed to a Leader in seekVotes
+I'm..1, term..10, seeked vote in Loop
+election time out, I'm..0, term 9 turn to candidate in Loop
+I'm..0, term..9, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+[0<-1] timeout in sendHeartBeatToPeers
+election time out, I'm..2, term 6 turn to candidate in Loop
+I'm..2, term..6, seek vote in Loop
+[0<-2] timeout in sendHeartBeatToPeers
+I'm..0, term..9, failed to a Leader in seekVotes
+I'm..0, term..9, seeked vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+election time out, I'm..1, term 5 turn to candidate in Loop
+I'm..1, term..5, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+[2<-0] timeout in sendHeartBeatToPeers
+[2<-1] timeout in sendHeartBeatToPeers
+I'm..2, term..6, failed to a Leader in seekVotes
+I'm..2, term..6, seeked vote in Loop
+[1<-2] timeout in sendHeartBeatToPeers
+[1<-0] timeout in sendHeartBeatToPeers
+I'm..1, term..5, failed to a Leader in seekVotes
+I'm..1, term..5, seeked vote in Loop
+election time out, I'm..0, term 6 turn to candidate in Loop
+I'm..0, term..6, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+election time out, I'm..1, term 11 turn to candidate in Loop
+I'm..1, term..11, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+[0<-2] timeout in sendHeartBeatToPeers
+[0<-1] timeout in sendHeartBeatToPeers
+I'm..0, term..6, failed to a Leader in seekVotes
+I'm..0, term..6, seeked vote in Loop
+election time out, I'm..2, term 10 turn to candidate in Loop
+I'm..2, term..10, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+[1<-2] timeout in sendHeartBeatToPeers
+election time out, I'm..0, term 10 turn to candidate in Loop
+I'm..0, term..10, seek vote in Loop
+[1<-0] timeout in sendHeartBeatToPeers
+[0->2] in seekVotes
+[0->1] in seekVotes
+I'm..1, term..11, failed to a Leader in seekVotes
+I'm..1, term..11, seeked vote in Loop
+[2<-1] timeout in sendHeartBeatToPeers
+[2<-0] timeout in sendHeartBeatToPeers
+I'm..2, term..10, failed to a Leader in seekVotes
+I'm..2, term..10, seeked vote in Loop
+[0<-2] timeout in sendHeartBeatToPeers
+[0<-1] timeout in sendHeartBeatToPeers
+I'm..0, term..10, failed to a Leader in seekVotes
+I'm..0, term..10, seeked vote in Loop
+election time out, I'm..2, term 7 turn to candidate in Loop
+I'm..2, term..7, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+election time out, I'm..1, term 6 turn to candidate in Loop
+I'm..1, term..6, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+[2<-0] timeout in sendHeartBeatToPeers
+[2<-1] timeout in sendHeartBeatToPeers
+I'm..2, term..7, failed to a Leader in seekVotes
+I'm..2, term..7, seeked vote in Loop
+election time out, I'm..0, term 7 turn to candidate in Loop
+I'm..0, term..7, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+[1<-2] timeout in sendHeartBeatToPeers
+[1<-0] timeout in sendHeartBeatToPeers
+I'm..1, term..6, failed to a Leader in seekVotes
+I'm..1, term..6, seeked vote in Loop
+election time out, I'm..2, term 11 turn to candidate in Loop
+I'm..2, term..11, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+election time out, I'm..1, term 12 turn to candidate in Loop
+I'm..1, term..12, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+[0<-2] timeout in sendHeartBeatToPeers
+[0<-1] timeout in sendHeartBeatToPeers
+I'm..0, term..7, failed to a Leader in seekVotes
+I'm..0, term..7, seeked vote in Loop
+[2<-0] timeout in sendHeartBeatToPeers
+[2<-1] timeout in sendHeartBeatToPeers
+I'm..2, term..11, failed to a Leader in seekVotes
+I'm..2, term..11, seeked vote in Loop
+[1<-0] timeout in sendHeartBeatToPeers
+[1<-2] timeout in sendHeartBeatToPeers
+I'm..1, term..12, failed to a Leader in seekVotes
+I'm..1, term..12, seeked vote in Loop
+election time out, I'm..0, term 11 turn to candidate in Loop
+I'm..0, term..11, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+election time out, I'm..1, term 7 turn to candidate in Loop
+I'm..1, term..7, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+election time out, I'm..2, term 8 turn to candidate in Loop
+I'm..2, term..8, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+[0<-1] timeout in sendHeartBeatToPeers
+[0<-2] timeout in sendHeartBeatToPeers
+I'm..0, term..11, failed to a Leader in seekVotes
+I'm..0, term..11, seeked vote in Loop
+[1<-0] timeout in sendHeartBeatToPeers
+[1<-2] timeout in sendHeartBeatToPeers
+I'm..1, term..7, failed to a Leader in seekVotes
+I'm..1, term..7, seeked vote in Loop
+[2<-1] timeout in sendHeartBeatToPeers
+[2<-0] timeout in sendHeartBeatToPeers
+I'm..2, term..8, failed to a Leader in seekVotes
+I'm..2, term..8, seeked vote in Loop
+election time out, I'm..2, term 12 turn to candidate in Loop
+I'm..2, term..12, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+election time out, I'm..0, term 8 turn to candidate in Loop
+I'm..0, term..8, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+election time out, I'm..1, term 13 turn to candidate in Loop
+I'm..1, term..13, seek vote in Loop
+[1->0] in seekVotes
+[1->2] in seekVotes
+election time out, I'm..0, term 12 turn to candidate in Loop
+I'm..0, term..12, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+[0<-2] timeout in sendHeartBeatToPeers
+[2<-0] timeout in sendHeartBeatToPeers
+[0<-1] timeout in sendHeartBeatToPeers
+I'm..0, term..8, failed to a Leader in seekVotes
+I'm..0, term..8, seeked vote in Loop
+[2<-1] timeout in sendHeartBeatToPeers
+I'm..2, term..12, failed to a Leader in seekVotes
+I'm..2, term..12, seeked vote in Loop
+[1<-2] timeout in sendHeartBeatToPeers
+[1<-0] timeout in sendHeartBeatToPeers
+I'm..1, term..13, failed to a Leader in seekVotes
+I'm..1, term..13, seeked vote in Loop
+[0<-2] timeout in sendHeartBeatToPeers
+[0<-1] timeout in sendHeartBeatToPeers
+I'm..0, term..12, failed to a Leader in seekVotes
+I'm..0, term..12, seeked vote in Loop
+election time out, I'm..2, term 9 turn to candidate in Loop
+I'm..2, term..9, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+[2<-1] timeout in sendHeartBeatToPeers
+[2<-0] timeout in sendHeartBeatToPeers
+I'm..2, term..9, failed to a Leader in seekVotes
+I'm..2, term..9, seeked vote in Loop
+election time out, I'm..1, term 8 turn to candidate in Loop
+I'm..1, term..8, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+[1<-0] timeout in sendHeartBeatToPeers
+[1<-2] timeout in sendHeartBeatToPeers
+I'm..1, term..8, failed to a Leader in seekVotes
+I'm..1, term..8, seeked vote in Loop
+election time out, I'm..0, term 9 turn to candidate in Loop
+I'm..0, term..9, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+election time out, I'm..0, term 13 turn to candidate in Loop
+I'm..0, term..13, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+election time out, I'm..2, term 13 turn to candidate in Loop
+I'm..2, term..13, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+election time out, I'm..2, term 10 turn to candidate in Loop
+I'm..2, term..10, seek vote in Loop
+[0<-2] timeout in sendHeartBeatToPeers
+[2->1] in seekVotes
+[0<-1] timeout in sendHeartBeatToPeers
+I'm..0, term..9, failed to a Leader in seekVotes
+I'm..0, term..9, seeked vote in Loop
+[2->0] in seekVotes
+[0<-2] timeout in sendHeartBeatToPeers
+[0<-1] timeout in sendHeartBeatToPeers
+I'm..0, term..13, failed to a Leader in seekVotes
+I'm..0, term..13, seeked vote in Loop
+[2<-0] timeout in sendHeartBeatToPeers
+[2<-1] timeout in sendHeartBeatToPeers
+I'm..2, term..13, failed to a Leader in seekVotes
+I'm..2, term..13, seeked vote in Loop
+[2<-0] timeout in sendHeartBeatToPeers
+[2<-1] timeout in sendHeartBeatToPeers
+I'm..2, term..10, failed to a Leader in seekVotes
+I'm..2, term..10, seeked vote in Loop
+before the first checkNoLeader in TestReElection2A
+after the first checkNoLeader in TestReElection2A
+before connect old follower 2 in TestReElection2A
+after connect old follower 2 in TestReElection2A
+before the fourth checkOneLeader in TestReElection2A
+election time out, I'm..1, term 14 turn to candidate in Loop
+I'm..1, term..14, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+[1<-0] timeout in sendHeartBeatToPeers
+[1<-2] timeout in sendHeartBeatToPeers
+I'm..1, term..14, failed to a Leader in seekVotes
+I'm..1, term..14, seeked vote in Loop
+election time out, I'm..1, term 9 turn to candidate in Loop
+I'm..1, term..9, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+election time out, I'm..2, term 14 turn to candidate in Loop
+I'm..2, term..14, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+[1<-0] timeout in sendHeartBeatToPeers
+[1<-2] timeout in sendHeartBeatToPeers
+I'm..1, term..9, failed to a Leader in seekVotes
+I'm..1, term..9, seeked vote in Loop
+[2<-1] timeout in sendHeartBeatToPeers
+[2<-0] timeout in sendHeartBeatToPeers
+election time out, I'm..0, term 10 turn to candidate in Loop
+I'm..0, term..10, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+I'm..2, term..14, failed to a Leader in seekVotes
+I'm..2, term..14, seeked vote in Loop
+[0<-2] feedback in time in seekVotes
+[0<-2], term 10, vote for me in seekVotes
+[0<-1] timeout in sendHeartBeatToPeers
+I'm..0, term..10, become a Leader in seekVotes
+I'm..0, term..10, seeked vote in Loop
+[0->2] in sendHeartBeatToPeers
+[0->1] in sendHeartBeatToPeers
+[0<-2] feedback in time in sendHeartBeatToPeers
+node..2 follows 0 in sendHeartBeatToPeers
+election time out, I'm..0, term 14 turn to candidate in Loop
+I'm..0, term..14, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+election time out, I'm..1, term 15 turn to candidate in Loop
+I'm..1, term..15, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+[0<-1] timeout in sendHeartBeatToPeers
+I'm 0, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+election time out, I'm..1, term 10 turn to candidate in Loop
+I'm..1, term..10, seek vote in Loop
+[0<-1] timeout in sendHeartBeatToPeers
+[1->0] in seekVotes
+[1->2] in seekVotes
+[0<-2] timeout in sendHeartBeatToPeers
+I'm..0, term..14, failed to a Leader in seekVotes
+I'm..0, term..14, seeked vote in Loop
+[1<-2] timeout in sendHeartBeatToPeers
+[1<-0] timeout in sendHeartBeatToPeers
+I'm..1, term..15, failed to a Leader in seekVotes
+I'm..1, term..15, seeked vote in Loop
+election time out, I'm..2, term 15 turn to candidate in Loop
+I'm..2, term..15, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+[1<-2] timeout in sendHeartBeatToPeers
+[1<-0] timeout in sendHeartBeatToPeers
+I'm..1, term..10, failed to a Leader in seekVotes
+I'm..1, term..10, seeked vote in Loop
+[2<-0] timeout in sendHeartBeatToPeers
+[2<-1] timeout in sendHeartBeatToPeers
+I'm..2, term..15, failed to a Leader in seekVotes
+I'm..2, term..15, seeked vote in Loop
+election time out, I'm..2, term 11 turn to candidate in Loop
+I'm..2, term..11, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+[2<-0] feedback in time in seekVotes
+[2<-0], term 11, vote for me in seekVotes
+[2<-1] timeout in sendHeartBeatToPeers
+I'm..2, term..11, become a Leader in seekVotes
+I'm..2, term..11, seeked vote in Loop
+election time out, I'm..1, term 11 turn to candidate in Loop
+I'm..1, term..11, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+election time out, I'm..1, term 16 turn to candidate in Loop
+I'm..1, term..16, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+after the fourth checkOneLeader in TestReElection2A
+before connect old leader 1 in TestReElection2A
+after connect old leader 1 in TestReElection2A
+before the fifth checkOneLeader in TestReElection2A
+[1<-0] timeout in sendHeartBeatToPeers
+[1<-2] timeout in sendHeartBeatToPeers
+I'm..1, term..16, failed to a Leader in seekVotes
+I'm..1, term..16, seeked vote in Loop
+[2->0] in sendHeartBeatToPeers
+[1<-0] timeout in sendHeartBeatToPeers
+election time out, I'm..0, term 15 turn to candidate in Loop
+I'm..0, term..15, seek vote in Loop
+[0->2] in seekVotes
+[1<-2] timeout in sendHeartBeatToPeers
+I'm..1, term..11, failed to a Leader in seekVotes
+I'm..1, term..11, seeked vote in Loop
+[0->1] in seekVotes
+[2->1] in sendHeartBeatToPeers
+[2<-0] feedback in time in sendHeartBeatToPeers
+node..0 follows 2 in sendHeartBeatToPeers
+[2<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 2 in sendHeartBeatToPeers
+I'm 2, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[0<-2] timeout in sendHeartBeatToPeers
+[0<-1] timeout in sendHeartBeatToPeers
+I'm..0, term..15, failed to a Leader in seekVotes
+I'm..0, term..15, seeked vote in Loop
+election time out, I'm..2, term 16 turn to candidate in Loop
+I'm..2, term..16, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+[2->1] in sendHeartBeatToPeers
+[2->0] in sendHeartBeatToPeers
+[2<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 2 in sendHeartBeatToPeers
+[2<-0] feedback in time in sendHeartBeatToPeers
+node..0 follows 2 in sendHeartBeatToPeers
+I'm 2, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[2<-0] timeout in sendHeartBeatToPeers
+[2<-1] timeout in sendHeartBeatToPeers
+I'm..2, term..16, failed to a Leader in seekVotes
+I'm..2, term..16, seeked vote in Loop
+election time out, I'm..1, term 17 turn to candidate in Loop
+I'm..1, term..17, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+[2->1] in sendHeartBeatToPeers
+[2->0] in sendHeartBeatToPeers
+[2<-0] feedback in time in sendHeartBeatToPeers
+node..0 follows 2 in sendHeartBeatToPeers
+[2<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 2 in sendHeartBeatToPeers
+I'm 2, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[1<-0] timeout in sendHeartBeatToPeers
+[1<-2] timeout in sendHeartBeatToPeers
+I'm..1, term..17, failed to a Leader in seekVotes
+I'm..1, term..17, seeked vote in Loop
+election time out, I'm..0, term 16 turn to candidate in Loop
+I'm..0, term..16, seek vote in Loop
+[0->2] in seekVotes
+[0->1] in seekVotes
+election time out, I'm..2, term 17 turn to candidate in Loop
+I'm..2, term..17, seek vote in Loop
+[2->1] in seekVotes
+[2->0] in seekVotes
+[0<-1] timeout in sendHeartBeatToPeers
+[0<-2] timeout in sendHeartBeatToPeers
+I'm..0, term..16, failed to a Leader in seekVotes
+I'm..0, term..16, seeked vote in Loop
+[2<-0] timeout in sendHeartBeatToPeers
+[2->1] in sendHeartBeatToPeers
+[2->0] in sendHeartBeatToPeers
+[2<-1] timeout in sendHeartBeatToPeers
+I'm..2, term..17, failed to a Leader in seekVotes
+I'm..2, term..17, seeked vote in Loop
+[2<-0] feedback in time in sendHeartBeatToPeers
+node..0 follows 2 in sendHeartBeatToPeers
+[2<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 2 in sendHeartBeatToPeers
+I'm 2, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+[2->1] in sendHeartBeatToPeers
+[2->0] in sendHeartBeatToPeers
+election time out, I'm..1, term 18 turn to candidate in Loop
+I'm..1, term..18, seek vote in Loop
+[1->2] in seekVotes
+[1->0] in seekVotes
+[2<-1] feedback in time in sendHeartBeatToPeers
+node..1 follows 2 in sendHeartBeatToPeers
+[2<-0] feedback in time in sendHeartBeatToPeers
+node..0 follows 2 in sendHeartBeatToPeers
+I'm 2, a Leader, receive feedbacks successfully in sendHeartBeatToPeers
+after the fifth checkOneLeader in TestReElection2A
+  ... Passed --   4.5  3   92   14074    0
+PASS
+ok  	_/Users/wan/Documents/Workspace/Go/6.824/src/raft	7.633s
